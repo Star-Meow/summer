@@ -17,6 +17,6 @@ while(True):
     json_data = "{'temp':"+ str(temp)+", 'humid':"+ str(humid)+"}"
     # 使用 MQTT 方式
     publish.single(topic, json_data, qos=1, hostname=host)
-    #暫停5秒
+    #暫停5秒   
     time.sleep(5)
     

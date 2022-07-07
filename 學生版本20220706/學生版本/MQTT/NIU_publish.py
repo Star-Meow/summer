@@ -1,8 +1,8 @@
 import paho.mqtt.publish as publish
-
-host = ""              # Broker's IP
-topic = ""           # Topic
+ 
+host = "192.168.0.10"              # Broker's IP
+topic = "NIU"           # Topic
 var =1                          # Declare variable
-while var ==1:                  # Infinite loop
-	payload = input('Please enter your message：')  # content of the message
-	publish.single(topic, payload, qos=1, hostname=host) #publish message
+while var ==1: 
+	payload = input("Please enter your message:")
+	publish.single(topic, payload, qos=1,hostname=host)

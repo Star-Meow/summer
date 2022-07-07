@@ -12,6 +12,6 @@ while(True):
     #將數值做成JSON格式
     json_data = {'temp': temp, 'humid': humid}
     # 使用 POST 方式
-    r = requests.post('http://127.0.0.1:5000/NIUPOST',json=json_data)
+    r = requests.post('http://192.168.0.10:5000/NIUPOST',json=json_data)
     #暫停2秒
     time.sleep(2)

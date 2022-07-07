@@ -10,6 +10,6 @@ while(True):
     temp = round(random.uniform(0.0, 100.0),2)
     humid = round(random.uniform(0.0, 100.0),2)
     # 使用 GET 方式
-    r = requests.get('http://127.0.0.1:5000/NIUGET?temp='+str(temp)+'&humid='+str(humid))
+    r = requests.get('http://192.168.0.10:5000/NIUGET?temp='+str(temp)+'&humid='+str(humid))
     #暫停2秒
     time.sleep(2)

@@ -22,4 +22,4 @@ def CHART():
     return render_template('CHART.html')
 
 if __name__=='__main__':
-    app.run(host='0.0.0.0', debug=False, threaded=True)
+    app.run(host='192.168.0.10', debug=False, threaded=True)
